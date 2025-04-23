@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f7f0ff;
+      color: #2c003e;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .box, .card, .hover, .chat {
+      padding: 16px;
+      background-color: #f3e5f5;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .header, .footer {
+      background-color: #b39ddb;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background: #ce93d8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .hover:hover {
+      background-color: #d1c4e9;
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .gradient {
+      background: linear-gradient(to right, #e1bee7, #d1c4e9);
+      color: #4a0072;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .chat {
+      max-width: 250px;
+    }
+
+    .chat.right {
+      margin-left: auto;
+      background-color: #d1c4e9;
+    }
+
+    .alert {
+      background: #f8bbd0;
+      border-left: 5px solid #f48fb1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .success {
+      background: #e6ee9c;
+      border-left: 5px solid #cddc39;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">🌸 Purple Themed Page</div>
+
+  <div class="box">Welcome to this minimal purple layout!</div>
+
+  <div class="flex">
+    <div class="box" style="flex: 1;">Left Side</div>
+    <div class="box" style="flex: 1;">Right Side</div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400x200.png?text=Image" alt="Card Image" />
+    <h3>Card Title</h3>
+    <p> image and text.</p>
+  </div>
+
+  <div class="gradient">Gradient Bg</div>
+
+  <div class="hover">Hover over me for effect!</div>
+
+  <div class="btn" onclick="document.getElementById('extra').style.display='block'">Reveal Hidden Content</div>
+  <div id="extra" class="box" style="display:none;">🎉 You found the secret!</div>
+
+  <div class="alert">⚠️ This is an alert message!</div>
+  <div class="success">✅ Everything looks good!</div>
+
+  <div class="chat">Hey, how are you?</div>
+  <div class="chat right">Great, thanks!</div>
+
+  <div class="footer">© 2025 Page</div>
+
+</body>
+</html>
